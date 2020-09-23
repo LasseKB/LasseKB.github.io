@@ -1,0 +1,24 @@
+@import "indexCommon.css";
+
+body {
+	background-color: white;
+	font-family: arial;
+	text-align: center;
+	color: #323232;
+}
+
+a:link {
+  color: #323232;
+}
+
+a:visited {
+  color: #4C4C4C;
+}
+
+a:hover {
+  color: black;
+}
+
+a:active {
+  color: #FF862F;
+}

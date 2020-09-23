@@ -1,1 +1,29 @@
-<center>Under construction. In the mean time, my CV is <a href="https://lassekb.github.io/CV.pdf"> here.</a></center>
+<html>
+	<meta charset="UTF-8" />
+	<head>
+		<link id="styleSheet" rel="stylesheet" type="text/css" href="index.css" />
+		<title>Lasse Korvig Bjerregaard</title>
+	</head>
+		<body>
+			Under construction. In the mean time, my CV is <a href="https://lassekb.github.io/CV.pdf"> here.</a>
+			<button id="themeButton">Light mode</button>
+			
+			<script type="text/javascript">
+				const urlParams = new URLSearchParams(window.location.search);
+				const lightTheme = urlParams.get('lightTheme');
+				if (lightTheme)
+				{
+					document.getElementById("styleSheet").setAttribute("href", "indexLight.css");
+				}
+				
+				var themeButton = document.getElementById("themeButton");
+				themeButton.innerHTML = lightTheme ? "Dark mode" : "Light mode";
+				themeButton.addEventListener("click", changeTheme);
+			
+				function changeTheme() {
+					var curUrl = location.protocol + '//' + location.host + location.pathname;
+					window.location.href = lightTheme ? curUrl : curUrl + "?lightTheme=true";
+				}
+			</script>
+		</body>
+</html>
