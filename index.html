@@ -5,25 +5,49 @@
 		<title>Lasse Korvig Bjerregaard</title>
 	</head>
 		<body>
-			Under construction. In the meantime, my CV is <a href="https://lassekb.github.io/CV.pdf"> here.</a>
-			<button id="themeButton">Light mode</button>
-			
-			<script type="text/javascript">
-				const urlParams = new URLSearchParams(window.location.search);
-				const lightTheme = urlParams.get('lightTheme');
-				if (lightTheme)
-				{
-					document.getElementById("styleSheet").setAttribute("href", "indexLight.css");
-				}
-				
-				var themeButton = document.getElementById("themeButton");
-				themeButton.innerHTML = lightTheme ? "Dark mode" : "Light mode";
-				themeButton.addEventListener("click", changeTheme);
-			
-				function changeTheme() {
-					var curUrl = location.protocol + '//' + location.host + location.pathname;
-					window.location.href = lightTheme ? curUrl : curUrl + "?lightTheme=true";
-				}
-			</script>
+			<div id=OuterContainer>
+				<div id=CvButton>
+					<h2><a href="https://lassekb.github.io/CV.pdf">CV</a></h2>
+				</div>
+				<div id=InnerContainer>
+
+					<h1>Portfolio of Lasse Korvig Bjerregaard</h1>
+					<div class=PortfolioItem>
+						<h2>Oust</h2><br />
+						<video width="384" height="216" controls style="margin: 0 10px 5px 0; float: left;">
+							<source src="OustTrailer.mp4" type="video/mp4">
+							Your browser does not seem to support HTML videos.
+						</video> 
+						Oust us a top-down, twin-stick, local multiplayer, social deduction game for four players.
+						<br /><br />
+						Players take control of agents of an oppressive government - the ODR.
+						<br /><br />
+						They are tasked with locating and burning illegal art and literature.
+						<br /><br />
+						However, one of the players is a western spy, trying to disrupt the operation. Will the ODR prevail, or fall to the west?
+						<br /><br />
+						Responsibility: Implementing game mechanics.
+						<br /><br />
+						Created by: Nikolaj Schildt Christensen, Jacob Hvid Amstrup, Adam Ryde Ankarfeldt, Adrian Radziszewski, Roman Karaba, and Lasse Korvig Bjerregaard.
+					</div>
+
+					<div class=PortfolioItem>
+						<h2>Grappler</h2>
+						<video class=ItemVideo width="384" height="216" controls>
+							<source src="GrapplerVideo.mp4" type="video/mp4">
+							Your browser does not seem to support HTML videos.
+						</video> 
+						Grappler is a sidescroller where you have to get through caves as fast as possible using only your trusty grappling hook.
+						<br /><br />
+						You must take care, however, to not swing too high and meet the sharp stalactites, or too low and touch the searing lava.
+						<br /><br /><br /><br /><br /><br /><br />
+						Responsibilities: Implementing the grappling hook, remixing sprites, and level design.
+						<br /><br />
+						Created by: Oliver Leth Kristensen, Oliver Jørgensen, and Lasse Korvig Bjerregaard.
+					</div>
+
+					<div class=PortfolioItem>Under construction...</div>
+				</div>
+			</div>
 		</body>
 </html>
