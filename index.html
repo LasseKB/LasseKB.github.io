@@ -9,10 +9,10 @@
 				<div id=CvButton>
 					<h2><a href="https://lassekb.github.io/CV.pdf">CV</a></h2>
 				</div>
-				<div id=InnerContainer>
+				<div id="InnerContainer">
 
 					<h1>Portfolio of Lasse Korvig Bjerregaard</h1>
-					<div class=PortfolioItem>
+					<div class="PortfolioItem">
 						<h2>Oust</h2><br />
 						<video width="384" height="216" controls style="margin: 0 10px 5px 0; float: left;">
 							<source src="OustTrailer.mp4" type="video/mp4">
@@ -24,29 +24,72 @@
 						<br /><br />
 						They are tasked with locating and burning illegal art and literature.
 						<br /><br />
-						However, one of the players is a western spy, trying to disrupt the operation. Will the ODR prevail, or fall to the west?
+						However, one of the players is a western spy, trying to disrupt the operation. Will the ODR 
+						prevail, or fall to the west?
 						<br /><br />
 						Responsibility: Implementing game mechanics.
 						<br /><br />
-						Created by: Nikolaj Schildt Christensen, Jacob Hvid Amstrup, Adam Ryde Ankarfeldt, Adrian Radziszewski, Roman Karaba, and Lasse Korvig Bjerregaard.
+						Created by: Nikolaj Schildt Christensen, Jacob Hvid Amstrup, Adam Ryde Ankarfeldt, 
+						Adrian Radziszewski, Roman Karaba, and Lasse Korvig Bjerregaard.
 					</div>
-
-					<div class=PortfolioItem>
+					
+					<div class="PortfolioItem">
 						<h2>Grappler</h2>
-						<video class=ItemVideo width="384" height="216" controls>
+						<video class="ItemVideo" width="384" height="216" controls>
 							<source src="GrapplerVideo.mp4" type="video/mp4">
 							Your browser does not seem to support HTML videos.
 						</video> 
-						Grappler is a sidescroller where you have to get through caves as fast as possible using only your trusty grappling hook.
+						Grappler is a sidescroller where you have to get through caves as fast as possible using only 
+						your trusty grappling hook.
 						<br /><br />
-						You must take care, however, to not swing too high and meet the sharp stalactites, or too low and touch the searing lava.
+						You must take care, however, to not swing too high and meet the sharp stalactites, or too low 
+						and touch the searing lava.
 						<br /><br /><br /><br /><br /><br /><br />
 						Responsibilities: Implementing the grappling hook, remixing sprites, and level design.
 						<br /><br />
 						Created by: Oliver Leth Kristensen, Oliver Jørgensen, and Lasse Korvig Bjerregaard.
 					</div>
+						
+					<div class="PortfolioItem">
+						<h2>Northern Hope</h2>
+						<img src="NorthernHopeScreenshot.png" class="ItemVideo" width="384" />
+						Northern Hope is a 3D walking simulator, played through the eyes of a patient in a wheelchair 
+						who lives and relives events over a period of 14 years, experiencing a care center as it evolves 
+						from a closed theraputic institution to an abandoned prison.
+						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+						Responsibilities: Implementing game mechanics and level white-boxing.
+						<br /><br />
+						Created by: Nikolaj Schildt Christensen, Jacob Hvid Amstrup, Adam Ryde Ankarfeldt, Mike Graham
+						and Lasse Korvig Bjerregaard.
+					</div>
 
-					<div class=PortfolioItem>Under construction...</div>
+					<div class="PortfolioItem">
+						<h2>Master Thesis</h2>
+						<h3>Ray Traced Reflections In Virtual Reality</h3>
+						<img src="MasterThesisScreenshot.png" class="ItemVideo" width="384" />
+						I did my thesis in a group of three people trying to implement ray traced reflections in virtual
+						reality in a way that would be more performant than fully ray tracing all reflections. To this 
+						end we expanded <a href="">Microsoft's "MiniEngine"</a> with virtual reality and implemented the
+						following optimizations: Screen Space Reflections, Hybrid Screen Space Reflections, Temporal 
+						Resolution Multiplexing, and Accelerated Stereo Rendering. Additionally, we extended Accelerated
+						Stereo Rendering to better handle reflections.
+						<br /><br /><br /><br />
+						Created by: Daniel Gaard Hansen, Oliver Leth Kristensen, and Lasse Korvig Bjerregaard.
+					</div>
+
+					<div class=PortfolioItem>
+						<h2>Hybrid Mono-Stereo Rendering for Virtual Reality</h2>
+						<img src="MonoStereoScreenshot.png" class=ItemVideo width="384" />
+						Hybrid Mono-Stereo Rendering for Virtual Reality is an optimization created by 
+						<a href="https://www.lgdv.tf.fau.de/files/2019/07/HybridVR-reduced.pdf">Fink et al. in 
+						2019</a>. The general idea of the optimization is to reduce the power needed to render for 
+						virtual reality. To do this, instead of rendering the whole scene twice – one time for each 
+						eye, as is the normal approach – only what is near the camera is rendered twice and objects 
+						further from the camera are rendered once.
+						<br /><br />
+						In the "Graphics Programming" course at the IT-University of Copenhagen I chose to implement 
+						this optimization in OpenGL.
+					</div>
 				</div>
 			</div>
 		</body>
